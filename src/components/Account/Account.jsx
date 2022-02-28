@@ -22,6 +22,7 @@ const styles = {
   },
   text: {
     color: "white",
+    fontSize: "1rem",
   },
   connector: {
     alignItems: "center",

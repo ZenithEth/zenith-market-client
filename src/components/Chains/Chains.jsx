@@ -107,7 +107,9 @@ function Chains() {
     <Menu onClick={handleMenuClick}>
       {menuItems.map((item) => (
         <Menu.Item key={item.key} icon={item.icon} style={styles.item}>
-          <span style={{ marginLeft: "5px" }}>{item.value}</span>
+          <span style={{ marginLeft: "5px", fontSize: "1rem" }}>
+            {item.value}
+          </span>
         </Menu.Item>
       ))}
     </Menu>
@@ -127,7 +129,9 @@ function Chains() {
           icon={selected?.icon}
           style={{ ...styles.button, ...styles.item }}
         >
-          <span style={{ marginLeft: "5px" }}>{selected?.value}</span>
+          <span style={{ marginLeft: "5px", fontSize: "1rem" }}>
+            {selected?.value}
+          </span>
           <DownOutlined />
         </Button>
       </Dropdown>
